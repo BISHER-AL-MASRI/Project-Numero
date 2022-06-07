@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>    </head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="img/Logo.png"></a>
+        <div class="nav-links" id="navLinks" >
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" id="links0">HOME</a></li>
+                <li><a href="about.html" id="links1">ABOUT ME</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Numero
+    </h1>
+    <p>The Next Generation Of Number Guessing On Discord!</p>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=982055193300582491&permissions=277025537088&scope=bot" class="hero-btn">Invite Me!</a>
+</div>
+
+</section>
+
+<!-- Acomplishemnts -->
+
+<section class="Acomplishemnts">
+    <h1>Features!</h1>
+    <p>All of My Features that I Have!</p>
+    <div class="row">
+        <div class="Acomplishemnts-col">
+            <h3>Multiplayer</h3>
+            <p>Play With All Or Infinite Players That You Desire!</p>
+        </div>
+        <div class="Acomplishemnts-col">
+            <h3>Number Guessing</h3>
+            <p>You Can Guess Number With !guess If You Get It Right You Win!</p>
+        </div>
+       
+    </div>
+</section>
+
+<section class="footer">
+    <h4>ADD ME</h4>
+    <div class="icons">
+       <a href="https://discord.com/api/oauth2/authorize?client_id=982055193300582491&permissions=277025537088&scope=bot"><i class="fa-brands fa-discord"></i></a>
+        </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    var links0 = document.getElementById("links")
+    var links1 = document.getElementById("links1")
+
+    function hideMenu() {
+        navLinks.style.visibility = "hidden";
+        navLinks.style.opacity = "0";
+        links0.setAttribute("href", "");
+        links1.setAttribute("href", "");
+    }
+    function showMenu() {
+        navLinks.style.transition = "0.5s"
+        navLinks.style.visibility = "visible";
+        navLinks.style.opacity = "1";
+        links0.setAttribute("href", "index.html");
+        links1.setAttribute("href", "about.html");
+    }
+</script>
+</body>
